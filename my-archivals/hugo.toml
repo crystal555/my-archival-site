@@ -1,0 +1,25 @@
+baseURL = 'https://crystal555.github.io/my-archival-site'
+languageCode = 'en-us'
+title = 'My Archival Site'
+theme = 'ananke'
+
+[params]
+  description = "A digital archive powered by Hugo"
+  author = "Your Name"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
