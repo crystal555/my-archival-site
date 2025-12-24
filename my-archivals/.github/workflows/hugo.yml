@@ -57,11 +57,11 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          cd my-archivals
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"          
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
+        working-directory: ./my-archivals          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
